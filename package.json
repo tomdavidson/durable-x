@@ -1,6 +1,6 @@
 {
   "name": "durable-x",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Lightweight durable execution with checkpoint memoization and saga cleanup—no sidecar required. Add Temporal/Dapr-style durability to Windmill workflows, APIs, background jobs, and CLI tools.",
   "type": "module",
   "main": "./dist/index.js",
@@ -9,14 +9,10 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    },
-    "./adapters/windmill": {
-      "import": "./dist/adapters/windmill.js",
-      "types": "./dist/adapters/windmill.d.ts"
     }
   },
   "files": [
-    "dist/**",
+    "dist/**/*",
     "README.md",
     "LICENSE"
   ],

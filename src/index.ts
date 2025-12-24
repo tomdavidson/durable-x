@@ -9,3 +9,6 @@ export type {
   CleanupRegistry,
   StorageAdapter
 } from './types';
+
+// Adapters
+export { windmillStorage } from './adapters/windmill';

@@ -1,6 +1,6 @@
 {
   "name": "durable-x",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight durable execution with checkpoint memoization and saga cleanup—no sidecar required. Add Temporal/Dapr-style durability to Windmill workflows, APIs, background jobs, and CLI tools.",
   "type": "module",
   "main": "./dist/index.js",
@@ -53,13 +53,13 @@
     "url": "https://github.com/tomdavidson/"
   },
   "license": "MIT",
-  "homepage": "https://github.com/tommdavidson/durable-x#readme",
+  "homepage": "https://github.com/tomdavidson/durable-x#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tommdavidson/durable-x.git"
+    "url": "git+https://github.com/tomdavidson/durable-x.git"
   },
   "bugs": {
-    "url": "https://github.com/tommdavidson/durable-x/issues"
+    "url": "https://github.com/tomdavidson/durable-x/issues"
   },
   "dependencies": {
     "neverthrow": "^6.0.0"

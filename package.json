@@ -1,5 +1,5 @@
 {
-  "name": "@td7x/durable-x",
+  "name": "@tommdavidson/durable-x",
   "version": "0.1.0",
   "description": "Lightweight durable execution with checkpoint memoization and saga cleanup—no sidecar required. Add Temporal/Dapr-style durability to Windmill workflows, APIs, background jobs, and CLI tools.",
   "type": "module",
@@ -69,7 +69,7 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "typescript": "^5.3.0",
+    "typescript": "^5.3.0"
   },
   "engines": {
     "bun": ">=1.0.0"

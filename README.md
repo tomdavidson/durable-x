@@ -30,8 +30,8 @@ This library brings durability to your **existing workflows and code**:
 ## Installation
 
 ```bash
-bun add @td7x/durable-x
-npm install @td7x/durable-x
+bun add @tommdavidson/durable-x
+npm install @tommdavidson/durable-x
 ```
 
 ***
@@ -66,7 +66,7 @@ The durability space is fragmented. Here's what exists and what doesn't:
 
 ### vs `gpahal/durable-execution`
 
-| Feature | gpahal/durable-execution | @td7x/durable-execution |
+| Feature | gpahal/durable-execution | @tommdavidson/durable-execution |
 |---------|--------------------------|----------------------------------|
 | **Primary focus** | AI workflows [1][2] | Windmill + general workflows |
 | **Saga cleanup** | ❌ Manual | ✅ Built-in (`beforeRisky`/`afterSafe`) |
@@ -104,7 +104,7 @@ import {
   afterSafe,
   complete,
   type CleanupRegistry,
-} from '@td7x/durable-x';
+} from '@tommdavidson/durable-x';
 
 const cleanupRunners: CleanupRegistry = {
   delete_temp: async (params) => {
@@ -143,7 +143,7 @@ export async function main(fileId: string) {
 
 ***
 
-## Why `@td7x/durable-x`?
+## Why `@tommdavidson/durable-x`?
 
 **The name justifies itself:**
 

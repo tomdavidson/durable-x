@@ -64,10 +64,12 @@
   "dependencies": {
     "neverthrow": "^6.0.0"
   },
+  "peerDependencies": {
+    "windmill-client": "^1.0.0"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "typescript": "^5.3.0",
-    "windmill-client": "^1.598.0"
   },
   "engines": {
     "bun": ">=1.0.0"

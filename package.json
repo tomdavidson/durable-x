@@ -1,0 +1,75 @@
+{
+  "name": "@td7x/durable-x",
+  "version": "0.1.0",
+  "description": "Lightweight durable execution with checkpoint memoization and saga cleanup—no sidecar required. Add Temporal/Dapr-style durability to Windmill workflows, APIs, background jobs, and CLI tools.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./adapters/windmill": {
+      "import": "./dist/adapters/windmill.js",
+      "types": "./dist/adapters/windmill.d.ts"
+    }
+  },
+  "files": [
+    "dist/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun run build:types && bun run build:esm",
+    "build:types": "tsc --emitDeclarationOnly --outDir dist",
+    "build:esm": "bun build ./src/index.ts --outdir dist --format esm --target bun --sourcemap=external",
+    "test": "bun test",
+    "test:integration": "bun test tests/**/*.test.ts",
+    "test:watch": "bun test --watch",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublish": "bun run clean && bun run build && bun run lint && bun run test"
+  },
+  "keywords": [
+    "windmill",
+    "workflow",
+    "durable-execution",
+    "checkpoint",
+    "temporal",
+    "dapr",
+    "idempotency",
+    "saga",
+    "memoization",
+    "fault-tolerance",
+    "resilience",
+    "crash-recovery",
+    "compensation",
+    "n8n"
+  ],
+  "author": {
+    "name": "Tom Davidson",
+    "email": "tom@tomdavidson.org",
+    "url": "https://github.com/tomdavidson/"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/tommdavidson/durable-x#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommdavidson/durable-x.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tommdavidson/durable-x/issues"
+  },
+  "dependencies": {
+    "neverthrow": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.3.0",
+    "windmill-client": "^1.598.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
